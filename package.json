@@ -1,0 +1,23 @@
+{
+  "name": "sofia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "npx node-sass assets/scss/devresume.scss -o assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/yatki/sofia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/yatki/sofia/issues"
+  },
+  "homepage": "https://gitlab.com/yatki/sofia#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
