@@ -9,6 +9,7 @@ function getParameterByName(name, url) {
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
+  const hideItems = document.querySelectorAll(".hidden-print");
   const myContainer = document.querySelector(".container");
   const resumeWrapper = document.querySelector(".resume-wrapper");
   const phoneInfo = document.querySelector(".phone-info");
@@ -18,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     resumeWrapper.classList.remove("p-5");
     resumeWrapper.classList.remove("shadow-lg");
     resumeWrapper.classList.remove("resume-wrapper");
+    hideItems.forEach((item) => {
+      item.style.display = "none";
+    });
   }
 
   if (getParameterByName("p") === "1") {
