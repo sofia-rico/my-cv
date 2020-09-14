@@ -3,14 +3,10 @@ function getParameterByName(seach) {
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  const hideItems = document.querySelectorAll(".hidden-print");
   const myContainer = document.querySelector(".container");
   const resumeWrapper = document.querySelector(".resume-wrapper");
   const phoneInfo = document.querySelector(".phone-info");
   if (getParameterByName("m=print")) {
-    hideItems.forEach((item) => {
-      item.style.display = "none";
-    });
     myContainer.classList.remove("px-3");
     myContainer.classList.remove("px-lg-5");
     resumeWrapper.classList.remove("p-5");
